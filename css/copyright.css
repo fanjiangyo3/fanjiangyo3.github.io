@@ -1,0 +1,39 @@
+/* 字體 */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+
+/*copyright*/
+
+.copyright {
+    height: auto;
+    color: #333;
+    z-index: 9;
+    position: fixed;
+    right: 1.5vw;
+    bottom: 1vw;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sorts Mill Goudy", serif;
+    font-size: 1.1vw;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@media all and (max-width: 1240px) {
+    .copyright {
+        font-size: 1.5vw;
+    }
+}
+
+@media all and (max-width: 1240px) {
+    .copyright {
+        font-size: 2.5vw;
+    }
+}
+
+@media all and (max-width: 720px) {
+    .copyright {
+        font-size: 3.5vw;
+    }
+}

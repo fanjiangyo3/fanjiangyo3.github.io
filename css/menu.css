@@ -1,0 +1,249 @@
+/* 字體 */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+.pointer {
+    cursor: pointer;
+}
+
+.click {
+    width: 100%;
+    height: 100%;
+}
+
+.en {
+    font-family: "Sorts Mill Goudy", serif, 'Noto Serif TC';
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/*============nav===============*/
+
+#header {
+    position: fixed;
+    display: block;
+    top: 4vw;
+    left: 6vw;
+    z-index: 99;
+    width: 6vw;
+    height: auto;
+    box-sizing: border-box;
+    font-family: "Sorts Mill Goudy", serif;
+    font-size: 1.1vw;
+    font-weight: 400;
+    font-style: italic;
+    color: #333;
+    letter-spacing: 0.03vw;
+}
+
+.dot {
+    width: 0.8vw;
+    height: 0.8vw;
+    position: absolute;
+    left: -1.5vw;
+    transition: all 0.5s ease;
+    transform: translate3d(0, 0, 0);
+}
+
+.wave-dot {
+    width: 100%;
+    height: 100%;
+    border-radius: 37%;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    transform-origin: center;
+    animation: menu-drift 3s infinite linear, rotation 3s infinite linear, menu-color 15s infinite;
+    overflow: hidden;
+    opacity: 0.8;
+}
+
+.wave-dot.two {
+    width: 118%;
+    height: 118%;
+    left: -9%;
+    top: -9%;
+    animation: menu-drift 5s infinite linear, rotation 5s infinite linear, menu-color 15s infinite;
+    opacity: 0.5;
+}
+
+.wave-dot.three {
+    width: 136%;
+    height: 136%;
+    left: -18%;
+    top: -19%;
+    animation: menu-drift 7s infinite linear, rotation 7s infinite linear, menu-color 15s infinite;
+    opacity: 0.2;
+}
+
+@keyframes rotation {
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes menu-drift {
+    0%,
+    100% {
+        border-radius: 94% 51% 83% 69% / 87% 61% 75% 65%;
+    }
+    20% {
+        border-radius: 70% 58% 67% 73% / 75% 65% 64% 60%;
+    }
+    40% {
+        border-radius: 80% 77% 59% 76% / 80% 87% 59% 70%;
+    }
+    60% {
+        border-radius: 83% 89% 83% 77% / 83% 74% 88% 84%;
+    }
+    80% {
+        border-radius: 81% 70% 58% 70% / 57% 88% 72% 92%;
+    }
+}
+
+.menu1 .dot {
+    top: 18%;
+}
+
+.menu2 .dot {
+    top: 67.2%;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 0;
+}
+
+nav ul {
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    width: 100%;
+    height: 2.9vw;
+    line-height: 2.9vw;
+    vertical-align: middle;
+    display: block;
+    list-style-type: none;
+    position: relative;
+}
+
+nav li>a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 0.8vw;
+    letter-spacing: 0.04vw;
+    z-index: 9;
+    overflow: hidden;
+    cursor: pointer;
+    color: #333;
+    text-decoration: underline solid transparent 1px!important;
+    text-underline-offset: 3vw;
+    /* safari */
+    -webkit-text-decoration-line: underline!important;
+    -webkit-text-decoration-color: transparent!important;
+    text-decoration-thickness: 1px!important;
+    line-height: 2.9vw;
+}
+
+nav li>a:hover,
+nav li>a.menu-active {
+    text-underline-offset: 0.2vw;
+    text-decoration: underline solid #333 1px!important;
+    -webkit-text-decoration-color: #333!important;
+    transition: all 0.3s ease;
+}
+
+@keyframes menu-color {
+    0% {
+        background-color: rgb(248, 95, 78);
+    }
+    20% {
+        background-color: #f8d142;
+    }
+    40% {
+        background-color: #30f5d7;
+    }
+    60% {
+        background-color: #31a8f8;
+    }
+    80% {
+        background-color: #c132f6;
+    }
+    100% {
+        background-color: rgb(248, 95, 78);
+    }
+}
+
+@media all and (max-width: 1240px) {
+    #header {
+        width: 12vw;
+    }
+    nav li {
+        line-height: 5.5vw;
+        height: 5.5vw;
+    }
+    nav li>a {
+        font-size: 1.5vw;
+        letter-spacing: 0.15vw;
+        line-height: 5.5vw;
+    }
+    .dot {
+        width: 1.2vw;
+        height: 1.2vw;
+        left: -2.3vw;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    #header {
+        width: 15vw;
+        top: 6vw;
+    }
+    nav li>a {
+        font-size: 2vw;
+    }
+}
+
+@media all and (max-width: 720px) {
+    #header {
+        width: 40vw;
+        top: 6vw;
+        left: 10vw;
+    }
+    nav li {
+        line-height: 10.5vw;
+        height: 10.5vw;
+    }
+    nav li>a {
+        font-size: 4.5vw;
+        letter-spacing: 0.2vw;
+        line-height: 10.5vw;
+    }
+    .dot {
+        width: 3.5vw;
+        height: 3.5vw;
+        left: -5.3vw;
+    }
+    .menu1 .dot {
+        top: 14%;
+    }
+    .menu2 .dot {
+        top: 64%;
+    }
+}

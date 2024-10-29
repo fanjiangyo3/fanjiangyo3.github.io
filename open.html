@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+    <title>范姜佑珊的個人履歷</title>
+
+    <!-- JQuery -->
+    <script src="import/jquery-3.6.0.min.js"></script>
+
+    <!-- 輪播swiper -->
+    <link rel="stylesheet" href="import/swiper-4.5.3/dist/css/swiper.min.css" />
+    <script src="import/swiper-4.5.3/dist/js/swiper.min.js"></script>
+
+    <!-- AOS -->
+    <script src="import/aos-master/dist/aos.js"></script>
+    <link href="import/aos-master/dist/aos.css" rel="stylesheet" />
+
+    <!-- animate.min.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Parallax.js視差動畫-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/rellax@1.12.1/rellax.min.js"></script>
+
+    <!-- 自適應手機或電腦版-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/device.js/0.2.7/device.min.js"></script>
+
+    <!-- 自訂義 -->
+    <link href="css/open.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet" />
+    <script src="js/menu.js"></script>
+    <script src="js/copyright.js"></script>
+    <link href="css/copyright.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="all">
+        <div class="title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">公司內部系統設計</div>
+        <div class="img" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+            <h2>我負責前端開發，包括整個版面設計的完成，以及增刪查改、數據計算、使用者操作的功能，如列印和匯出資料等。此外，我還會與後端人員合作，串接 API 以實現整個網站的功能。</h2>
+            <img src="img/open/pic1.jpg" alt="" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="800">
+        </div>
+        <div class="img" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+            <h2>我與駐點在大陸的同仁合作，首先與現場人員討論系統需求，然後再與他們進行遠端會議，討論介面排版和功能需求。根據這些需求，我規劃前端介面和操作功能，以使用者體驗和習慣為優先考量來製作網頁。</h2>
+            <img src="img/open/pic2.jpg" alt="" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="800">
+        </div>
+    </div>
+    <div class="copyright"></div>
+    <script>
+        // AOS.init();
+        window.addEventListener("load", function(event) {
+            AOS.init({
+                startEvent: 'DOMContentLoaded',
+                once: false,
+                mirror: true,
+                duration: 1000,
+            });
+        });
+    </script>
+
+</body>
+
+</html>
