@@ -28,7 +28,7 @@ img {
     display: block;
     top: 4vw;
     left: 6vw;
-    z-index: 99;
+    z-index: 99999999;
     width: 6vw;
     height: auto;
     box-sizing: border-box;
@@ -249,4 +249,14 @@ nav li>a.menu-active {
     .menu2 .dot {
         top: 64%;
     }
+}
+
+.nav-bg {
+    width: 76%;
+    height: 96%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    filter: blur(20px);
 }
