@@ -191,6 +191,9 @@ nav li>a.menu-active {
 }
 
 @media all and (max-width: 1240px) {
+    .cursor {
+        display: none;
+    }
     #header {
         width: 12vw;
     }

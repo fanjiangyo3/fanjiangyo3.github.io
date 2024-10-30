@@ -856,7 +856,7 @@ img {
 
 @media all and (max-width: 720px) {
     .main {
-        min-height: 178vw;
+        min-height: 167vw;
     }
     .txt {
         font-size: 7.5vw;

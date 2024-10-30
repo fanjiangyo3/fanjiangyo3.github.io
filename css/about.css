@@ -171,14 +171,14 @@ img {
     width: 1.2vw;
     position: absolute;
     display: block;
-    left: 5.5vw;
+    left: 6.5vw;
     top: 50%;
     transform: translateY(-50%);
     transition: all 0.5s ease;
 }
 
 .mail {
-    left: 12.2vw;
+    left: 13.3vw;
 }
 
 .phone-a:hover .phone,
@@ -628,10 +628,10 @@ img {
     .phone,
     .mail {
         width: 1.8vw;
-        left: 8.5vw;
+        left: 10vw;
     }
     .mail {
-        left: 18.5vw;
+        left: 20vw;
     }
     .info h6 {
         margin: 3vw 0 4.6vw 0.9vw;
@@ -797,10 +797,10 @@ img {
     .phone,
     .mail {
         width: 2.6vw;
-        left: 12.5vw;
+        left: 15.5vw;
     }
     .mail {
-        left: 27.5vw;
+        left: 30.8vw;
     }
     .info h6::after {
         width: 35.55vw;
@@ -947,10 +947,10 @@ img {
     .phone,
     .mail {
         width: 3.6vw;
-        left: 16.5vw;
+        left: 24vw;
     }
     .mail {
-        left: 35.5vw;
+        left: 47.6vw;
     }
     .banner-waves {
         top: 30vw;
