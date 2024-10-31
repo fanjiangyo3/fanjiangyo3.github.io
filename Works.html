@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+    <title>范姜佑珊的個人履歷</title>
+
+    <!-- JQuery -->
+    <script src="import/jquery-3.6.0.min.js"></script>
+
+    <!-- 輪播swiper -->
+    <link rel="stylesheet" href="import/swiper-4.5.3/dist/css/swiper.min.css" />
+    <script src="import/swiper-4.5.3/dist/js/swiper.min.js"></script>
+
+    <!-- AOS -->
+    <script src="import/aos-master/dist/aos.js"></script>
+    <link href="import/aos-master/dist/aos.css" rel="stylesheet" />
+
+    <!-- animate.min.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/rellax@1.12.1/rellax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+
+    <!-- 自適應手機或電腦版-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/device.js/0.2.7/device.min.js"></script>
+
+    <!-- 自訂義 -->
+    <link href="css/index.css" rel="stylesheet" />
+    <script src="js/index.js"></script>
+    <link href="css/menu.css" rel="stylesheet" />
+    <script src="js/menu.js"></script>
+    <script src="js/copyright.js"></script>
+    <link href="css/copyright.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="all">
+        <!-- 選單 -->
+        <header id="header"></header>
+        <!-- 頁面1 -->
+        <div class="main1">
+
+        </div>
+
+    </div>
+    <div class="copyright"></div>
+    <script>
+        // AOS.init();
+        window.addEventListener("load", function(event) {
+            AOS.init({
+                startEvent: 'DOMContentLoaded',
+                once: false,
+                mirror: true,
+                duration: 1000,
+            });
+
+            //menu動態
+            setTimeout(function() {
+                window.sessionStorage.setItem("menu", "menu4");
+                $("#header").removeClass("menu1 menu2 menu3 menu4");
+                $("#header").addClass("menu4");
+
+                $(".nav-li").removeClass("menu-active");
+                $(".Works").addClass("menu-active");
+            }, 300);
+        });
+    </script>
+    <script>
+        // var rellax = new Rellax('.rellax');
+
+        // gsap.registerPlugin(ScrollTrigger);
+        // gsap.to('.parallax-content', {
+        //     y: '500%', // 設置向上移動的距離
+        //     ease: 'none',
+        //     scrollTrigger: {
+        //         trigger: '.parallax', // 觸發元素
+        //         start: 'top bottom', // 觸發點 (當 .parallax 的 top 到達視口底部時開始)
+        //         end: 'bottom top', // 結束點 (當 .parallax 的 bottom 到達視口頂部時結束)
+        //         scrub: true // 平滑滾動
+        //     }
+        // });
+        // //判斷網頁寬度重新整理以防破版(公用無需判斷)
+        // $(window).on('resize', function() {
+        //     location.reload();
+        // });
+    </script>
+</body>
+
+</html>
